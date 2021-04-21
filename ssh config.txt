@@ -1,0 +1,8 @@
+username admin privilege 15 password cisco 
+line vty 0 4 
+transport input ssh
+login local
+
+ip domain-name whatever.com
+crypto key generate rsa
+1024

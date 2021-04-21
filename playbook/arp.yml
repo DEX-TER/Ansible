@@ -1,0 +1,25 @@
+---
+- name: Manage GNS3 devices
+  hosts: switches
+  gather_facts: false
+
+ # Creates VLAN using loop instead of creating severals lines for each vlan or 3 differents tasks
+
+  tasks:
+    - name: Create new vlans
+      cisco.ios.ios_vlans:
+        config:
+        - name: '{{ item.name }}'
+          vlan_id: '{{ item.id }}'
+          state: active
+          shutdown: disabled
+        
+        state: merged
+
+      loop:
+        - id: 10
+          name: IT
+        - id: 30
+          name: Accouting
+        - id: 40
+          name: Sales
