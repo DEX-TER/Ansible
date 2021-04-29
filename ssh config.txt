@@ -1,4 +1,4 @@
-username admin privilege 15 password cisco 
+username admin privilege 15 password cisco
 line vty 0 4 
 transport input ssh
 login local

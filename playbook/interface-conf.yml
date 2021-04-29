@@ -1,0 +1,13 @@
+---
+- name: Configure Interface
+  hosts: all
+  gather_facts: false
+ #connection: ansible.netcommon.network_cli
+
+  tasks:
+    - name: Configure a loopback
+      cisco.ios.ios_config:
+        parents: interface loopback 1995
+        lines:
+          - ip address 10.10.10.10 255.255.255.255
+          - description just creation random interface for test purposes
