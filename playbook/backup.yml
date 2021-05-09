@@ -1,0 +1,14 @@
+---
+- name: capture show output
+  hosts:  sw-iou
+  gather_facts: false
+
+  tasks:
+    - name: Check Boot path
+      ios_command:
+        commands: 'show ip inter br | ex un'
+      register: stdout
+    - debug: var=stdout
+
+    - name: output to json
+

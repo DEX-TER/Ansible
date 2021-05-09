@@ -1,14 +1,13 @@
-[all:vars]
+[sw-iosv:vars]
 ansible_connection=ansible.netcommon.network_cli
+ansible_become=yes
+ansible_become_method=enable
+ansible_network_os=ios
+ansible_user=admin
+ansible_password=cisco
 
-
-[switches]
-192.168.122.100
-192.168.122.101
-192.168.122.102
-
-
-[switches:vars]
+[sw-iou:vars]
+ansible_connection=ansible.netcommon.network_cli
 ansible_become=yes
 ansible_become_method=enable
 ansible_network_os=ios
@@ -17,3 +16,10 @@ ansible_password=cisco
 
 
 
+
+[sw-iosv]
+192.168.122.100
+192.168.122.101
+
+[sw-iou]
+192.168.122.102
