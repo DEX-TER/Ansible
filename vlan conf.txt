@@ -1,0 +1,106 @@
+en
+conf t
+
+vlan 150
+name Executives+GroupHeads
+
+vlan 151
+name MIS+TSU
+
+vlan 152
+name DigitalSolutions
+
+vlan 153
+name PCI-Users+POS+CardPrinters
+
+vlan 154
+name AutomationAndDevelopment
+
+vlan 155
+name InformationSecurity
+
+vlan 156
+name Finance
+
+vlan 157
+name People and Culture
+
+vlan 158
+name Treasury
+
+vlan 159
+name Swift
+
+vlan 160
+name BankingOperations
+
+vlan 161
+name CalAsset+Brokers
+
+vlan 162
+name InternalControlandAudit
+
+vlan 163
+name InternationalOperations
+
+vlan 164
+name InvesterRelations
+
+vlan 165
+name RemediationZone
+
+vlan 166
+name CustomerExperience
+
+vlan 167
+name Marketing
+
+vlan 168
+name TestATMS+POS
+
+vlan 169
+name PrivateBanking
+
+vlan 170
+name VOICE
+
+vlan 171
+name CPFD+CIBD+RETAIL+RAU
+
+vlan 172
+name Legal
+
+vlan 173
+name ATMS(BothInHouse+OffSite)
+
+vlan 174
+name Custody
+
+vlan 175
+name DigitalandInclusiveBanking
+
+vlan 176
+name SharedServices+Drivers+Sec
+
+vlan 177
+name RiskandCompliance
+
+vlan 178
+name Recovery
+
+vlan 179
+name Printers
+
+vlan 180
+name CCTV+AccessControls+UPS
+
+vlan 181 
+name PMU+Strategy&Performance
+
+vlan 182
+name Guest
+
+vlan 183
+name Women-Banking
+
+
